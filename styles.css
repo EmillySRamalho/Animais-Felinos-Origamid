@@ -1,0 +1,18 @@
+body, h1,h2,ul,li,p,dd,dt,dl{
+  margin:0;
+  padding:0;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+ul{
+  list-style: none;
+}
+
+body{
+  background: #6E4B2C;
+  color: #E8DCC4;
+}
