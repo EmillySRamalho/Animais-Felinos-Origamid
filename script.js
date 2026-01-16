@@ -1,1 +1,0 @@
-const imgs = docu
