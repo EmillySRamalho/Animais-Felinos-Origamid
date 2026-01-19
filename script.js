@@ -27,7 +27,12 @@ const novoH1 = document.createElement('h1');
 novoH1.innerText = 'Felinos são legais';
 novoH1.classList.add('titulo');
 mapa.appendChild(novoH1);
-
-
-
 console.log(novoH1);
+
+const h1 = document.querySelector('h1');
+const faq = document.querySelector('.faq');
+
+const cloneH1 = h1.cloneNode(true);
+
+cloneH1.classList.add('pink');
+faq.appendChild(cloneH1);
