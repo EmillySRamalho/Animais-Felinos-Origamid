@@ -1,23 +1,22 @@
-const menu = document.querySelector('.menu');
-console.log(menu.classList);
+const img = document.querySelector('img')
 
-menu.classList.add('ativo', 'teste');
-console.log(menu.classList);
-
-menu.classList.remove('teste');
-console.log(menu.classList);
-
-menu.classList.remove('teste2');
-console.log(menu.classList);
-
-if (menu.classList.contains('teste2')) {
-  menu.classList.add('possui teste2');
-} else {
-  menu.classList.add('nao-possui-teste2');
+function callback(){
+  console.log('Clicou na imagem')
 }
 
-const animais = document.querySelector('.animais');
-console.log(animais.attributes['id']);
+img.addEventListener('click', callback)
 
-const img = document.querySelector('img');
-console.log(img.getAttribute('src'));
+function callback2(event){
+  console.log(event)
+} 
+
+img.addEventListener('click', callback2)
+
+const animais = document.querySelector('.animais-lista')
+function callback3(event){
+  console.log(event.target)
+  console.log(event.currentTarget)
+  console
+}
+
+animais.addEventListener('click', callback3)
