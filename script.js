@@ -36,3 +36,11 @@ h1.addEventListener('mouseout', handleEvent)
 window.addEventListener('scroll', handleEvent)
 window.addEventListener('resize', handleEvent)
 
+function handleKeyBoard(event){
+  if(event.key === 'a'){
+    document.body.classList.toggle('azul')
+  } else if(event.key === 'v'){
+    document.body.classList.toggle('pink')
+  } 
+}
+  window.addEventListener('keydown', handleKeyBoard)
