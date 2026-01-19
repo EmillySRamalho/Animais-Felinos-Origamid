@@ -20,5 +20,14 @@ console.log(lista.childNodes)
 const contato = document.querySelector('.contato');
 const titulo = contato.querySelector('.titulo');
 const animais = document.querySelector('.animais');
-
+const mapa = document.querySelector('.mapa');
 contato.insertBefore(animais, titulo);
+
+const novoH1 = document.createElement('h1');
+novoH1.innerText = 'Felinos são legais';
+novoH1.classList.add('titulo');
+mapa.appendChild(novoH1);
+
+
+
+console.log(novoH1);
