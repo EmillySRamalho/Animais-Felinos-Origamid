@@ -106,6 +106,10 @@ body{
   grid-column: 2;
 }
 
+.animais-lista li{
+  cursor: pointer;
+}
+
 .animais-lista::-webkit-scrollbar{
   width: 18px;
 }
@@ -223,4 +227,25 @@ body{
     margin-bottom: 0;
   }
 
+}
+
+.js-tabcontent section{
+  display: none;
+}
+
+.js-tabcontent section.ativo{
+  display: block;
+  animation: show .5s forwards;
+}
+
+@keyframes show{
+  from {
+    opacity:0;
+    transform: translate3D(-30px, 0,0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3D(0,0,0);
+
+  }
 }
