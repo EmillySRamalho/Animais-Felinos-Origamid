@@ -23,7 +23,10 @@ body{
   background: #F2E8D5;
   color:#593E25;
   -webkit-font-smoothing: antialiased;
-  display: grid;
+}
+
+.grid-container{
+   display: grid;
   grid-template-columns: 1fr 120px minmax(300px,800px) 1fr;
 }
 
@@ -195,7 +198,7 @@ body{
 }
 
 @media(max-width: 700px){
-  body{
+  .grid-container{
     grid-template-columns: 1fr;
   }
 
